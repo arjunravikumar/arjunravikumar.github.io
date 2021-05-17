@@ -124,14 +124,14 @@
 									<li><a href="https://github.com/arjunravikumar" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
-								<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-								<h3>Client side IP geolocation using <a href="http://ipinfo.io">ipinfo.io</a></h3>
-
-								<hr/>
-								<div id="ip"></div>
-								<div id="address"></div>
-								<hr/>Full response: <pre id="details"></pre>
-						</section>
+							<section>
+							<script>
+							  function recordData (data) {
+							    console.log(data.ip, data.country)
+							  }
+							</script>
+							<script src="https://ipinfo.io/json?callback=recordData"></script>
+							</section>
 					</footer>
 			</div>
 		<!-- Scripts -->
